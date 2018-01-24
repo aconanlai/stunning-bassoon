@@ -1,0 +1,30 @@
+{
+  "name": "mousemovement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "webpack && rsync -av --exclude='node_modules' --exclude='client' ./ ./build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "es6-promise": "^4.0.5",
+    "exports-loader": "^0.6.3",
+    "imports-loader": "^0.7.0",
+    "whatwg-fetch": "^2.0.1",
+    "webpack": "^1.14.0"
+  }
+}
